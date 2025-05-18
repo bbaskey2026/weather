@@ -46,7 +46,7 @@ const getWeatherIconByTemp = (temp) => {
     if (hum >= 35) return "/hum/humidity.png";
     if (hum >= 25) return "/hum/smart.png";
     if (hum >= 15) return "/hum/weather.png";
-    if (hum >= 5) return "/hum/fuck.png";
+    if (hum >= 5) return "/hum/fu.png";
     return "/icons/fuck.png";
   };
 
