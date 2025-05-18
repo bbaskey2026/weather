@@ -26,12 +26,12 @@ import "./App.css";
       } else {
         setWeather(null);
         setError(result.error || "City not Found");
-        navigate("/error", { state: { message: result.error || "City not Found" } }); // ← auto navigate
+        navigate("/error", { state: { message: result.error || "City not Found" } }); 
       }
     } catch (err) {
       setError("Failed to fetch weather data");
       setWeather(null);
-      navigate("/error", { state: { message: "Failed to fetch weather data" } }); // ← auto navigate
+      navigate("/error", { state: { message: "Failed to fetch weather data" } }); 
     }
   };
 
