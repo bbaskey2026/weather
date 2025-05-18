@@ -1,4 +1,4 @@
-// src/components/WeatherError.jsx
+
 import React from "react";
 import "./App.css";
 
