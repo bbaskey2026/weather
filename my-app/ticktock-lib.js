@@ -1,4 +1,4 @@
-// ticktock-lib.js
+
 const TickTockLib = (() => {
   let memory = [];
   let triggers = [];
@@ -50,8 +50,8 @@ const TickTockLib = (() => {
   }
 
   return {
-    spark,      // like useState
-    observe,    // like useEffect
-    boot        // like mount
+    spark,     
+    observe,   
+    boot       
   };
 })();
