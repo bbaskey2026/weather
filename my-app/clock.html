@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TickTock Clock</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="ticktock-lib.js"></script>
+  <script>
+    function ClockFace() {
+      const [now, updateNow] = TickTockLib.spark(new Date().toLocaleTimeString());
+
+      TickTockLib.observe(() => {
+        setInterval(() => {
+          updateNow(new Date().toLocaleTimeString());
+        }, 1000);
+      }, []);
+
+      return `<h2 style="font-family:monospace;">⏰ ${now}</h2>`;
+    }
+
+    TickTockLib.boot(ClockFace).into(document.getElementById("root"));
+  </script>
+</body>
+</html>
