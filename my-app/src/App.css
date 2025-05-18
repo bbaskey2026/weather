@@ -129,7 +129,7 @@ button {
 }
 
 
-/* Error Page Styles */
+
 .error-page {
   display: flex;
   flex-direction: column;
@@ -177,7 +177,7 @@ button {
   background-color: #2b6cb0;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
